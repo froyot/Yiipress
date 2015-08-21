@@ -1,0 +1,17 @@
+#collapseTags .tag-item a{
+
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.2em;
+}
+#collapseTags .tag-item{
+    margin-right:0.5em;
+}
+.sidebar .nav > li > ul > li > a.current {
+    background: #fff;
+    color: #555;
+   border-bottom:0px;
+}
+
