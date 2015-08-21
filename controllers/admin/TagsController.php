@@ -49,6 +49,10 @@ class TagsController extends BaseController
 
     return $this->render('index',['tag'=>$tag,'dataProvider'=>$dataProvider]);
   }
-
+  public function actionDelete($id)
+  {
+    $res = TermTaxonomy::deleteItem($id);
+    return $this->redirect(['admin/tags/index']);
+  }
 }
 

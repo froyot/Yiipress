@@ -80,7 +80,10 @@ use yii\grid\GridView;
                                             'description',
                                             'count',
 
-
+                                            [
+                                            'class' => 'yii\grid\ActionColumn',
+                                            'template'=>'{delete}',
+                                            ]
                                         ],
 
                                         'tableOptions'=>

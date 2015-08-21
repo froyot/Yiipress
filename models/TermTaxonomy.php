@@ -283,4 +283,21 @@ class TermTaxonomy extends \yii\db\ActiveRecord
         }
         return $rows;
     }
+
+    public function deleteItem($id)
+    {
+        $termTaxonomy = TermTaxonomy::findOne(['term_taxonomy_id'=>$id]);
+        if($termTaxonomy)
+        {
+            //删除relation
+            TermRelationships::deleteAll(['term_taxonomy_id'=>$id]);
+            //删除Terms
+            $terms = $termTaxonomy->terms;
+            if($terms)
+                $terms->delete();
+            $termTaxonomy->delete();
+            //
+        }
+        return true;
+    }
 }

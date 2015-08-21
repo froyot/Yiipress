@@ -1,7 +1,7 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
-$params = array_merge(require(__DIR__ . '/sysconfig.php'),$params);
+$params = array_merge(require(__DIR__ . '/params-local.php'),$params);
 Yii::setAlias('@myweb', '/web');
 $config = [
     'id' => 'basic',
@@ -49,7 +49,7 @@ $config = [
             'showScriptName' => false,
            'enablePrettyUrl'=>true,
         ],
-        'db' => require(__DIR__ . '/db.php'),
+        'db' => array_merge(require(__DIR__ . '/db.php'),require(__DIR__ . '/db-local.php')),
     ],
     'params' => $params,
 ];

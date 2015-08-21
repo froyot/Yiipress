@@ -38,7 +38,7 @@ AdminAsset::register($this);
 	           <div class="col-md-12">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="<?php echo Yii::$app->homeUrl;?>"><?php echo Yii::$app->params['SITE_NAME'];?></a></h1>
+	                 <h1><a href="<?php echo Yii::$app->homeUrl;?>">CMS</a></h1>
 	              </div>
 	           </div>
 	        </div>

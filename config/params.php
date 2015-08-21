@@ -10,10 +10,10 @@ return array_merge([
     'OPTION_CACHE'=>'_SITE_OPTIONS',
     'MENU_CACHE'=>'_SITE_MENU',
 
-    'QINIU_DOMAIN'=>'',
-    'QINIU_ACCESS_KEY'=>'',
-    'QINIU_SECRET_KEY'=>'',
-    'QINIU_BUCKET'=>'',
+    'QINIU_DOMAIN'=>'http://7xkcoe.com1.z0.glb.clouddn.com',
+    'QINIU_ACCESS_KEY'=>'ipdCs-vTbD29bntEjiJADrBGJnTEhDP4phofxZZz',
+    'QINIU_SECRET_KEY'=>'61Bj-ZVjlKUwRdHx7zfAzuBRLgLtmqf5MWaNm62d',
+    'QINIU_BUCKET'=>'froyoimg',
 
 ],
 $admin_menu

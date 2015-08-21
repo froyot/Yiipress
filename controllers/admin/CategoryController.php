@@ -55,5 +55,11 @@ class CategoryController extends BaseController
                           ]
                         );
   }
+
+  public function actionDelete($id)
+  {
+    $res = TermTaxonomy::deleteItem($id);
+    return $this->redirect(['admin/category/index']);
+  }
 }
 
